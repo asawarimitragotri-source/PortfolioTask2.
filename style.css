@@ -1,1 +1,132 @@
-* { margin: 0; padding: 0; box-sizing: border-box; } body { font-family: "Poppins", sans-serif; background: #f7f7ff; color: #222; scroll-behavior: smooth; } nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 25px; position: sticky; top: 0; background: white; box-shadow: 0 2px 6px rgba(0,0,0,0.1); z-index: 999; } nav ul { display: flex; list-style: none; gap: 20px; } nav a { text-decoration: none; font-weight: 500; color: #333; transition: 0.3s; } nav a:hover { color: #6a5acd; } .logo { font-weight: 700; font-size: 20px; color: #6a5acd; } .hero { text-align: center; padding: 120px 20px; animation: fade 1.2s ease-in; } .hero span { color: #6a5acd; } .btn { display: inline-block; margin-top: 20px; padding: 12px 25px; border-radius: 30px; background: #6a5acd; color: white; text-decoration: none; font-weight: 600; transition: 0.3s; } .btn:hover { opacity: 0.85; } .projects, .contact { padding: 60px 25px; text-align: center; } .projects h2, .contact h2 { margin-bottom: 25px; font-size: 28px; } .project-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; } .project { width: 260px; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: 0.3s; } .project:hover { transform: translateY(-6px); } .contact p { font-size: 16px; margin: 6px 0; } footer { text-align: center; padding: 15px; background: #6a5acd; color: white; margin-top: 30px; } @media(max-width: 600px) { nav ul { flex-direction: column; gap: 10px; } .project-list { flex-direction: column; align-items: center; } } @keyframes fade { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f7f7ff;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  position: sticky;
+  top: 0;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #6a5acd;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  color: #6a5acd;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  animation: fade 1.2s ease-in;
+}
+
+.hero span {
+  color: #6a5acd;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: #6a5acd;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.projects, .contact {
+  padding: 60px 25px;
+  text-align: center;
+}
+
+.projects h2, .contact h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.project {
+  width: 260px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-6px);
+}
+
+.contact p {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #6a5acd;
+  color: white;
+  margin-top: 30px;
+}
+
+@media(max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
